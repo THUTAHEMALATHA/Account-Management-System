@@ -1,4 +1,4 @@
-import supabase from "../config/supabaseClient";
+import supabase from "../config/supabaseClient.js";
 
 export const getBalance = async(req, res)=>{
     const userId= req.user.id;

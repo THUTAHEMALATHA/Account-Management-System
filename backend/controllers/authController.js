@@ -1,6 +1,6 @@
-import supabase from "../config/supabaseClient";
+import supabase from "../config/supabaseClient.js";
 import bcrypt from "bcryptjs";
-import generateToken from "../utils/generateToken";
+import generateToken from "../utils/generateToken.js";
 
 export const signup = async(req, res)=>{
     const { name, email, password} =req.body;
