@@ -25,11 +25,11 @@ import API from "../api/axios";
                     <tr 
                     key={tx.id}
                     style={{
-                        color:tx.transcations_type === "credit" ? "green" : "red",
+                        color:tx.transcation_type === "credit" ? "green" : "red",
 
                     }}>
                         <td>{new Date(tx.created_at).toLocaleDateString()}</td>
-                        <td>{tx.transcations_type}</td>
+                        <td>{tx.transcation_type}</td>
                         <td>₹{tx.amount}</td>
 
                     </tr>
@@ -38,9 +38,5 @@ import API from "../api/axios";
 
         </table>
     )
-
-
-
  }
  export default Statement;
- 
