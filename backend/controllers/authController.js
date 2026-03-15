@@ -17,7 +17,7 @@ export const signup = async(req, res)=>{
         return res.status(400).json({error:error.message});
 
     }
-  const token =generateToken(data);
+  const token =generateToken(data.id);
 
   res.json({
     token,
