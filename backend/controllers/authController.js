@@ -35,7 +35,7 @@ export const login = async (req,res) => {
      .eq("email", email)
      .single();
 
-     if(error || data){
+     if(error || !data){
         return res.status(400).json({message:"user not found"})
      }
 
