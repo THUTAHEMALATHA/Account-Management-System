@@ -38,4 +38,4 @@ function SendMoney() {
     </form>
   );
 }
-export default SendMoney;
+export default SendMoney
