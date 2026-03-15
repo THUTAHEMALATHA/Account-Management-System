@@ -35,7 +35,7 @@ export const transferMoney = async(req,res)=>{
     .eq("id",senderId)
     .single();
     
-    if(sender.balance<amount){
+    if(sender.balance < amount){
         return res.status(400).json({message:"insufficient balaance"})
     }
 
